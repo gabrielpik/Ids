@@ -32,6 +32,7 @@ export default class Services{
 await fetch("https://7c9e-177-191-113-88.ngrok-free.app", {
     method: "GET",
     headers: {
+        'ngrok-skip-browser-warning': 'true',
         "Content-Type": "application/json;charset=UTF-8"
     }
 })
