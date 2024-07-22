@@ -100,7 +100,7 @@ Cadastrar(father){
 
     this.link = 'http://localhost:3000/arvore'
 
-    fetch("http://localhost:3000/arvore",
+    fetch("https://7c9e-177-191-113-88.ngrok-free.app",
         {
 
         headers: {
@@ -130,7 +130,7 @@ Cadastrar(father){
 
 async Delete(id){
 
-   await fetch("http://localhost:3000/arvore/"+id,
+   await fetch("https://7c9e-177-191-113-88.ngrok-free.app"+id,
         {
 
         headers: {
@@ -185,7 +185,7 @@ async Path(arrow){
   
 
 
-    await fetch("http://localhost:3000/arvore",
+    await fetch("https://7c9e-177-191-113-88.ngrok-free.app",
         {
 
         headers: {
