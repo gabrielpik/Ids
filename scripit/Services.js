@@ -29,7 +29,7 @@ export default class Services{
             return this.tasks*/
         }
 
-await fetch("https://7c9e-177-191-113-88.ngrok-free.app", {
+await fetch("https://7c9e-177-191-113-88.ngrok-free.app/arvore", {
     method: "GET",
     headers: {
         'ngrok-skip-browser-warning': 'true',
