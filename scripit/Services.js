@@ -32,7 +32,7 @@ export default class Services{
 
 await fetch(this.servidor+"/arvore", {
     method: "GET",
-    headers: {
+    headers: 
         'ngrok-skip-browser-warning': 'true',
         "Content-Type": "application/json;charset=UTF-8"
     }
