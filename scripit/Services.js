@@ -10,6 +10,7 @@ export default class Services{
         this.getDataArvore()
         this.printGET()
         this.view = new View(document)
+        this.servidor = "https://7c9e-177-191-113-88.ngrok-free.app"
         
         
         
@@ -29,7 +30,7 @@ export default class Services{
             return this.tasks*/
         }
 
-await fetch("https://7c9e-177-191-113-88.ngrok-free.app/arvore", {
+await fetch(this.servidor+"/arvore", {
     method: "GET",
     headers: {
         'ngrok-skip-browser-warning': 'true',
@@ -101,7 +102,7 @@ Cadastrar(father){
 
     this.link = 'http://localhost:3000/arvore'
 
-    fetch("https://7c9e-177-191-113-88.ngrok-free.app",
+    fetch(this.servidor+"arvore",
         {
 
         headers: {
@@ -131,7 +132,7 @@ Cadastrar(father){
 
 async Delete(id){
 
-   await fetch("https://7c9e-177-191-113-88.ngrok-free.app"+"/"+id,
+   await fetch(this.servidor+"arvore"+"/"+id,
         {
 
         headers: {
