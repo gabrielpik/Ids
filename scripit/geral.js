@@ -8,6 +8,7 @@ import View from './View.js'
 
 const btnDelete = document.querySelector("#btn_del_List ")
 const btnPath = document.querySelector("#btn_path_List")
+const allarow = document.querySelector("#arow")
 
 btnPath.addEventListener("click",ePath)
 btnDelete.addEventListener("click",eDelete)
@@ -212,9 +213,17 @@ function ePath(e){
 
    
     console.log("id selecionada : "+btnPath.id.replace("tree-id-", ""))
-    
 
-    service.Path(document.querySelector("#arow-"+btnPath.id.replace("tree-id-", "")))
+    let id = "#arow-"+btnPath.id.replace("tree-id-", "")
+    
+    let elementId = allarow.firstElementChild
+
+
+
+    while(!elementId && elementId.id != id)
+        elementId = elementId.nextElementSibling
+
+    service.Path(elementId)
 }
 
 
