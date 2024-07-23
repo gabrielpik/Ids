@@ -31,7 +31,7 @@ export default class Services{
             
         }
 
-await fetch(`${this.servidor}/arvore`, {
+await fetch(`${this.servidor}arvore`, {
     method: "GET",
     headers: {
         'ngrok-skip-browser-warning': 'true',
@@ -188,7 +188,7 @@ async Path(arrow){
   
 
 
-    await fetch("https://7c9e-177-191-113-88.ngrok-free.app",
+    await fetch(this.servidor+"/arvore",
         {
 
         headers: {
