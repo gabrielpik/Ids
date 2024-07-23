@@ -113,7 +113,7 @@ export default class View{
                 btns =btns.firstElementChild
                 while(btns){
                     btns.id= "tree-id-"+tree.Time
-                    console.log("id dos btns   :   "+btns.Time)
+                    console.log("id dos btns   :   "+btns.id)
                     btns = btns.nextElementSibling
                 }
                     

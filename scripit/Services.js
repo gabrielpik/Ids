@@ -4,7 +4,7 @@ import View from "./View.js"
 export default class Services{
 
      constructor(document){
-        this.servidor = "https://7c9e-177-191-113-88.ngrok-free.app"
+        this.servidor = "https://57f1-177-191-117-165.ngrok-free.app"
         console.log("Services conectado")
         this.dataArvore = []
         this.getDataArvore()

@@ -214,14 +214,17 @@ function ePath(e){
    
     console.log("id selecionada : "+btnPath.id.replace("tree-id-", ""))
 
-    let id = "#arow-"+btnPath.id.replace("tree-id-", "")
+    let id = "arow-"+btnPath.id.replace("tree-id-", "")
     
     let elementId = allarow.firstElementChild
 
 
 
-    while(!elementId && elementId.id != id)
+    while(elementId && elementId.id != id){
+        console.log("wile"+elementId.id)
         elementId = elementId.nextElementSibling
+    }
+        
 
     service.Path(elementId)
 }
