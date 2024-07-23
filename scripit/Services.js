@@ -133,7 +133,7 @@ Cadastrar(father){
 
 async Delete(id){
 
-   await fetch(this.servidor+"arvore"+"/"+id,
+   await fetch(this.servidor+"/arvore"+"/"+id,
         {
 
         headers: {
