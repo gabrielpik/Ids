@@ -28,9 +28,10 @@ export default class Services{
 /*
             if (typeof sucess === "function") uscess(this.tasks)
             return this.tasks*/
+            
         }
 
-await fetch(`${this.servidor}/arvore``, {
+await fetch(`${this.servidor}/arvore`, {
     method: "GET",
     headers: {
         'ngrok-skip-browser-warning': 'true',
