@@ -131,7 +131,7 @@ Cadastrar(father){
 
 async Delete(id){
 
-   await fetch("https://7c9e-177-191-113-88.ngrok-free.app"+id,
+   await fetch("https://7c9e-177-191-113-88.ngrok-free.app"+"/"+id,
         {
 
         headers: {
