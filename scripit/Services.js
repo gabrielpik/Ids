@@ -4,13 +4,13 @@ import View from "./View.js"
 export default class Services{
 
      constructor(document){
-        this.link =
+        this.servidor = "https://7c9e-177-191-113-88.ngrok-free.app"
         console.log("Services conectado")
         this.dataArvore = []
         this.getDataArvore()
         this.printGET()
         this.view = new View(document)
-        this.servidor = "https://7c9e-177-191-113-88.ngrok-free.app"
+        
         
         
         
@@ -31,7 +31,7 @@ export default class Services{
             
         }
 
-await fetch(`${this.servidor}arvore`, {
+await fetch(`${this.servidor}/arvore`, {
     method: "GET",
     headers: {
         'ngrok-skip-browser-warning': 'true',
