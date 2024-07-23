@@ -30,9 +30,9 @@ export default class Services{
             return this.tasks*/
         }
 
-await fetch(this.servidor+"/arvore", {
+await fetch("´${this.servidor}´/arvore", {
     method: "GET",
-    headers: 
+    headers: {
         'ngrok-skip-browser-warning': 'true',
         "Content-Type": "application/json;charset=UTF-8"
     }
@@ -102,7 +102,7 @@ Cadastrar(father){
 
     this.link = 'http://localhost:3000/arvore'
 
-    fetch(this.servidor+"arvore",
+    fetch(this.servidor+"/arvore",
         {
 
         headers: {
