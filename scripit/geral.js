@@ -9,9 +9,11 @@ import View from './View.js'
 const btnDelete = document.querySelector("#btn_del_List ")
 const btnPath = document.querySelector("#btn_path_List")
 const allarow = document.querySelector("#arow")
+const btnGet = document.querySelector("#botao-atualizar")
 
 btnPath.addEventListener("click",ePath)
 btnDelete.addEventListener("click",eDelete)
+btnGet.addEventListener("click",eget)
 
 
 
@@ -194,6 +196,7 @@ function enviar(e){
 }
 
 function eDelete(e){
+
     if(btnDelete.id=="btn_del_List")
     {
         console.log("selecione uma id")
@@ -229,6 +232,11 @@ function ePath(e){
     service.Path(elementId)
 }
 
+function eget(e){
+
+    service.getDataArvore()
+    
+}
 
 
 

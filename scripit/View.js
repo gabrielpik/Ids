@@ -22,7 +22,7 @@ export default class View{
 
         if(this.areaPrincipal.style.display == "grid"){
             this.areaPrincipal.style.display="none";
-            this.areaList.style.display="grid";
+            this.areaList.style.display="flex";
             //style.display = "none";
             
         }else{
