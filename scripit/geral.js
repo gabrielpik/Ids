@@ -10,11 +10,20 @@ const btnDelete = document.querySelector("#btn_del_List ")
 const btnPath = document.querySelector("#btn_path_List")
 const allarow = document.querySelector("#arow")
 const btnGet = document.querySelector("#botao-atualizar")
+const btnClear = document.querySelector("#btn-clear")
+
 
 btnPath.addEventListener("click",ePath)
 btnDelete.addEventListener("click",eDelete)
 btnGet.addEventListener("click",eget)
+btnClear.addEventListener("click",function(){
 
+    console.log("click no clear")
+    let back = document.querySelector(".fist")
+    back.style.backgroundImage="none"
+    back.style.backgroundColor="rgb(34, 34, 34)"
+
+})
 
 
 
@@ -233,6 +242,7 @@ function ePath(e){
 }
 
 function eget(e){
+
 
     service.getDataArvore()
     

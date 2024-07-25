@@ -223,6 +223,11 @@ th {
     
 }
 
+li{
+
+    list-style-type: disc;
+
+}
 
 #btns-List{
     display: flex;
