@@ -8,11 +8,12 @@ export default class View{
         this.areaPrincipal = this.document.querySelector(".main")
 
         this.areaPrincipal.style.display="grid";
-        this.renderArea = this.renderArea.bind(this);
+        this.renderAreaListRE = this.renderAreaListRE.bind(this);
+        this.renderAreaInitialRE = this.renderAreaInitialRE.bind(this);
         this.colunm = this.document.querySelector("#name-Colunm")
         this.arow = this.document.querySelector("#arow")
         this.document.querySelector("#all").addEventListener("click",this.renderAreaListRE)
-        this.document.addEventListener("click",this.renderAreaInitialRE)
+        this.document.querySelector("#btn-inicio").addEventListener("click",this.renderAreaInitialRE)
 
         this.renderNameColunm()
         
@@ -21,24 +22,27 @@ export default class View{
 
     renderAreaListRE(){
 
+        
         if(this.areaPrincipal.style.display == "grid"){
             this.areaPrincipal.style.display="none";
             this.areaList.style.display="flex";
             //style.display = "none";
             
         }
-       
            
     }
 
     renderAreaInitialRE(){
-        if(this.areaList.style.display == "flex"){
+
+        if(this.areaPrincipal.style.display == "none"){
 
             this.areaPrincipal.style.display="grid";
             this.areaList.style.display="none";
             console.log( this.areaPrincipal.style.display)
 
         }
+   
+      
     }
 
     renderNameColunm()

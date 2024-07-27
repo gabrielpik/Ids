@@ -26,7 +26,7 @@ btnClear.addEventListener("click",function(){
 
 })
 
-btnInicio.addEventListener("click",)
+
 
 
 
