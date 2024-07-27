@@ -11,29 +11,34 @@ export default class View{
         this.renderArea = this.renderArea.bind(this);
         this.colunm = this.document.querySelector("#name-Colunm")
         this.arow = this.document.querySelector("#arow")
-        this.document.querySelector("#all").addEventListener("click",this.renderArea)
+        this.document.querySelector("#all").addEventListener("click",this.renderAreaListRE)
+        this.document.addEventListener("click",this.renderAreaInitialRE)
 
         this.renderNameColunm()
         
        
     }
 
-    renderArea(){
+    renderAreaListRE(){
 
         if(this.areaPrincipal.style.display == "grid"){
             this.areaPrincipal.style.display="none";
             this.areaList.style.display="flex";
             //style.display = "none";
             
-        }else{
+        }
+       
+           
+    }
+
+    renderAreaInitialRE(){
+        if(this.areaList.style.display == "flex"){
 
             this.areaPrincipal.style.display="grid";
             this.areaList.style.display="none";
             console.log( this.areaPrincipal.style.display)
 
         }
-       
-           
     }
 
     renderNameColunm()

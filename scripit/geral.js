@@ -11,6 +11,7 @@ const btnPath = document.querySelector("#btn_path_List")
 const allarow = document.querySelector("#arow")
 const btnGet = document.querySelector("#botao-atualizar")
 const btnClear = document.querySelector("#btn-clear")
+const btnInicio = document.querySelector("#btn-inicio")
 
 
 btnPath.addEventListener("click",ePath)
@@ -24,6 +25,8 @@ btnClear.addEventListener("click",function(){
     back.style.backgroundColor="rgb(34, 34, 34)"
 
 })
+
+btnInicio.addEventListener("click",)
 
 
 
@@ -72,8 +75,6 @@ let dirA ='url("20220907_131042.jpg")'
  
 
 }
-
-
 
 function setSelecion(e){
     
